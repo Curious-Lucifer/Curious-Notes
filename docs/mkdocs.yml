@@ -1,0 +1,70 @@
+site_name: Curious Notes
+site_description: Curious Notes
+site_author: Curious
+site_url: https://curious-lucifer.netlify.app
+repo_name: Curious-Lucifer/Curious-Notes
+repo_url: https://github.com/Curious-Lucifer/Curious-Notes
+copyright: Copyright &copy; 2023 - 2024 Curious
+theme:
+  name: material
+  language: en
+  palette:
+    primary: black
+    accent: blue
+    scheme: slate
+  icon:
+    repo: fontawesome/brands/github-alt
+  logo: static/img/logo.png
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - search.suggest
+  - search.highlight
+  - search.share
+  font:
+    text: Kode Mono
+    code: Noto Sans Mono
+plugins:
+- search
+- minify:
+    minify_html: true
+nav:
+- Home:
+  - index.md
+markdown_extensions:
+- admonition
+- md_in_html
+- codehilite:
+    guess_lang: false
+- def_list
+- footnotes
+- meta
+- toc:
+    permalink: true
+- pymdownx.arithmatex
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji ''
+    emoji_generator: !!python/name:materialx.emoji.to_svg ''
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+extra_javascript:
+- https://cdnjs.loli.net/ajax/libs/pangu/3.3.0/pangu.min.js
+- static/js/extra.js
+- https://cdnjs.loli.net/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML
+extra_css:
+- static/css/extra.css
