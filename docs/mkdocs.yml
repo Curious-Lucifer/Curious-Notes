@@ -31,6 +31,15 @@ plugins:
 nav:
 - Home:
   - index.md
+  - home/about.md
+- Misc:
+  - misc/linux_wildcards.md
+- Environment:
+  - environment/github_actions_setup.md
+  - environment/git_setup.md
+  - environment/pwnbox_setup.md
+  - environment/lamp_setup.md
+  - environment/arch_linux_setup.md
 markdown_extensions:
 - admonition
 - md_in_html
