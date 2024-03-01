@@ -191,6 +191,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://curious-lucifer.netlify.app/tools/metaspoit/</loc>
+         <lastmod>2024-03-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://curious-lucifer.netlify.app/web/php/php_filter/</loc>
          <lastmod>2024-03-01</lastmod>
          <changefreq>daily</changefreq>

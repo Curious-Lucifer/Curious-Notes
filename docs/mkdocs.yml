@@ -72,6 +72,8 @@ nav:
     - web/tools/beautiful_soup.md
 - Misc:
   - misc/linux_wildcards.md
+- Tools:
+  - tools/metaspoit.md
 - WiFi:
   - wifi/reference.md
 - Language:
