@@ -4,6 +4,7 @@
 ### CTF
 
 - 2024 | AIS3 EOF Final | 不屬於 Kirito 的星爆氣流斬 | 麵包超人獎 Master of Pwn
+- 2024 | AIS3 EOF Final | 不屬於 Kirito 的星爆氣流斬 | 4th
 - 2024 | AIS3 EOF Qual | Curious | 3rd
 - 2023 | CGGC CTF Qual | StarburstKiwawa | 6th
 - 2023 | 資安技能金盾獎 國高中組 | I4ms0w3ek | 3rd
