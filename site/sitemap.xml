@@ -211,6 +211,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://curious-lucifer.netlify.app/wifi/reference/</loc>
+         <lastmod>2024-03-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://curious-lucifer.netlify.app/writeup/ais3_eof_2024_final_icpc_writeup/</loc>
          <lastmod>2024-03-01</lastmod>
          <changefreq>daily</changefreq>
