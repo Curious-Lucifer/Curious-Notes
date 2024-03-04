@@ -58,7 +58,8 @@ nav:
     - crypto/rsa/franklin_reiter_related_message_attack.md
     - crypto/rsa/coppersmith_short_pad_attack.md
 - Pwn:
-  - pwn/c_x86_x64_elf_basic.md
+  - pwn/c_x86_x64_elf.md
+  - pwn/c++_x64_elf.md
   - pwn/tools.md
 - Reverse:
   - rev/z3.md

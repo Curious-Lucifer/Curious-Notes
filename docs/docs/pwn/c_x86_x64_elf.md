@@ -1,4 +1,4 @@
-# C x86/x64 ELF - Basic
+# C x86/x64 ELF
 
 ## Assembly
 ### x86
@@ -107,6 +107,18 @@ ld test.o -o test
 ### Pwntools
 我們可以在 `asm` 中使用 `jmp $+<相對位址>`/`jmp $-<相對位址>` 來指定要跳到的位址，這個相對位址也是相對 `jmp` 下一個 instruction 的 address
 
+
+---
+## Controlflow Enforcement Technology (CET)
+用來防止 ROP/JOP/COP 這種使用者控制執行流程的手段，主要有 shadow stack 和 indirect branch tracking (IBT) 這兩種機制。目前的 Linux kernel 只支援 userspace 的 shadow stack 和 kernel 的 IBT。
+
+### Shadow Stack
+會 allocate 一塊記憶體當作 shadow stack，當 `call` 被呼叫到的時候，return address 會被 push 到普通的 stack 和 shadow stack。當 `ret` 被呼叫到的時候，程式會 pop shadow stack 然後和普通的 stack 去比較，一樣才會正常 return。
+
+### Indirect Branch Tracking (IBT)
+如果 `call` 或 `jmp` 被執行到的時候，會把 `TRACKER` 設定成 `WAIT_FOR_ENDBRANCH`。當 `TRACKER` 是 `WAIT_FOR_ENDBRANCH` 的時候，只能執行 `endbr64` 來把 `TRACKER` 設定成 `IDLE`，執行其他 instruction 會直接報錯。
+
+
 ---
 ## RELRO
 - **Partail RELRO** : pointers to `link_map`'s head and `_dl_runtime_resolve()` can be found in `.got.plt + 0x8` and `.got.plt + 0x10`  
@@ -140,5 +152,7 @@ ld test.o -o test
 ## Reference
 - [x64 Linux Assembly](https://www.youtube.com/watch?v=VQAKkuLL31g&list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn&index=1)
 - [Finding link_map and _dl_runtime_resolve() under Full RELRO](https://ypl.coffee/dl-resolve-full-relro/)
+- [Controlflow Enforcement Technology](https://docs.kernel.org/next/x86/shstk.html)
+- [x64 endbr64](https://cs.pynote.net/hd/asm/202302172/)
 
 
