@@ -64,6 +64,8 @@ nav:
 - Reverse:
   - rev/z3.md
 - Web:
+  - LAN:
+    - web/lan/arp.md
   - PHP:
     - web/php/php_filter.md
   - Python:
