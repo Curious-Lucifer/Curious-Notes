@@ -100,7 +100,7 @@ fi
 if [[ $1 == "build" ]]; then
     docker build -t pwnbox:$VERSION .;
 elif [[ $1 == "up" ]]; then
-    docker run -it -d --name pwnbox_$VERSION -v `pwd`/data:/data pwnbox:$VERSION;
+    docker run -it -d --name pwnbox_$VERSION -v `pwd`/data:/data --cap-add=SYS_PTRACE pwnbox:$VERSION;
 elif [[ $1 == "start" ]]; then
     docker start pwnbox_$VERSION;
 elif [[ $1 == "shell" ]]; then
