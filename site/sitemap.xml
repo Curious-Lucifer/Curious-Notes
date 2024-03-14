@@ -2,247 +2,252 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://curious-lucifer.netlify.app/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/blog/college_special_exam/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/blog/scist_linux_challenge_rpg_blog/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/basic_math/bezouts_identity/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/basic_math/chinese_remainder_theorem/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/basic_math/eulers_theorem/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/basic_math/extended_euclidean_algorithm/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/basic_math/legendre_symbol/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/prng/mt19937/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/bleichenbacher_1998/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/broadcast_attack_with_linear_padding/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/coppersmith_method/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/coppersmith_short_pad_attack/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/factor_n_with_d/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/fermat_factorization/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/franklin_reiter_related_message_attack/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/know_high_bits_of_p/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/lsb_oracle_attack/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/pollards_p-1_algorithm/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/rsa/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/rsa_privatekey_format/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/stereotyped_message/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/wiener_attack/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/crypto/rsa/williams_p%2B1_algorithm/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/environment/arch_linux_setup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/environment/git_setup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/environment/github_actions_setup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/environment/lamp_setup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/environment/pwnbox_setup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/home/about/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/language/c%2B%2B/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/language/c/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/language/python/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/language/unity/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/misc/linux_wildcards/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/pwn/c%2B%2B_x64_elf/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/pwn/c_x86_x64_elf/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/pwn/tools/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://curious-lucifer.netlify.app/pwn/x64_glibc_heap/</loc>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/rev/z3/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/tools/metaspoit/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/web/lan/arp/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/web/php/php_filter/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/web/python/flask_debug_mode/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/web/tools/beautiful_soup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/web/tools/python_requests/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/wifi/reference/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/writeup/ais3_eof_2024_final_icpc_writeup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/writeup/ais3_eof_2024_qual_writeup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://curious-lucifer.netlify.app/writeup/scist_linux_challenge_rpg_writeup/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
