@@ -1,0 +1,49 @@
+# Tools
+
+- `ldd`
+    - `ldd <binary>` : find binary's linked file
+- `readelf`
+    - `readelf -S <binary>` : display the sections' header
+- `objdump`
+    - `objudmp -t <binary>` : print symbols and their address
+    - `objdump -d -M intel <binary>` : print the assembly of binary in intel style
+    - `objdump -T <libc> | grep <function_name>` : print `<function_name>`'s offset in `<libc>`
+    - `objdump -R <binary>` : print GOT's information
+- `strace`
+    - `strace <binary>` : trace the system call when `<binary>` run
+- `ltrace`
+    - `ltrace <binary>` : trace the library call when `<binary>` run
+- `checksec`
+    - `checksec <binary>` : print the protection of binary
+- `ROPgadget`
+    - `ROPgadget --binary <binary>` : list all the gadget
+    - `ROPgadget --binary <binary> --only "<pattern>"` : list the gadget that match the `<pattern>`. Ex. `ROPgadget --binary <binary> --only "pop|ret"`
+    - `ROPgadget --binary <binary> --only "<pattern>" --multibr` : enable multiple branch gadgets
+    - `ROPgadget --binary <binary> --string "<string>"` : find `<string>` in `<binary>`
+- `one_gadget`
+  - `one_gadget <binary>` : print out `<binary>`'s one gadget and it's condition
+- `seccomp-tools`
+  - `seccomp-tools dump <binary>` : print out the seccomp rules of the `<binary>`
+- `gdb`
+    - `run` : execute binary
+    - `countinue` : continue running binary
+    - `start` : execute binary and stop at binary's entry point
+    - `disass <function_name>` : disassemble `<function_name>`
+    - `break *<address>` : set breakpoint at `<address>`
+    - `info breakpoint` : list breakpoint’s informatino
+    - `delete <number>` : delete `<number>` breakpoint
+    - `info register` : register’s information
+    - `x/[number][b/h/w/g][u/d/s/i/x] <address>` : print data of `<address>`, `[number]` is represent to how many group of data you want to print out, `[b/h/w/g]` is represent 1/2/4/8 byte of group size, `[u/d/s/i/x]` is represent `unsigned int` / `decimal` / `string` / `instruction` / `hex`
+    - `ni` : next instruction
+    - `si` : if the instruction isn’t function call, then `si` is same with `ni`. but if the instruction is function call, then `si` will step into the function
+    - `backtrace` or `bt` : print every information of stack frame
+    - `set *<address>=<value>` : set `<address>`'s value to `<value>` for 4 bytes, use `set {char/short/long}<address>=<value>` for 1/2/8 bytes
+    - `fin` : finish running current function
+    - `ctx` : refresh gdb’s page
+    - `vmmap` : list the memory layout
+    - `codebase` : print the base address of code
+    - `libc` : print the base address of libc
+    - `tls` ; print the address of `tls`
+    - `heapinfo` : print heap bin's information
+    - `parseheap` : print heap's information
+    - `dump memory <file> <start_addr> <end_addr>` : dump memory (`<start_addr>` ~ `<end_addr>`) to `<file>`

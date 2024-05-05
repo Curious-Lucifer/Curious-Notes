@@ -1,0 +1,150 @@
+site_name: Curious Notes
+site_description: Curious Notes
+site_author: Curious
+site_url: https://curious-lucifer.netlify.app
+repo_name: Curious-Lucifer/Curious-Notes
+repo_url: https://github.com/Curious-Lucifer/Curious-Notes
+copyright: Copyright &copy; 2023 - 2024 Curious
+theme:
+  name: material
+  language: en
+  palette:
+    primary: black
+    accent: blue
+    scheme: slate
+  icon:
+    repo: fontawesome/brands/github-alt
+  logo: static/img/logo.png
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - search.suggest
+  - search.highlight
+  - search.share
+  font:
+    text: Kode Mono
+    code: Noto Sans Mono
+plugins:
+- search
+- minify:
+    minify_html: true
+nav:
+- Home:
+  - index.md
+  - home/about.md
+- Crypto:
+  - Basic Math:
+    - crypto/basic_math/bezouts_identity.md
+    - crypto/basic_math/extended_euclidean_algorithm.md
+    - crypto/basic_math/eulers_theorem.md
+    - crypto/basic_math/chinese_remainder_theorem.md
+    - crypto/basic_math/legendre_symbol.md
+  - PRNG:
+    - crypto/prng/mt19937.md
+  - RSA:
+    - crypto/rsa/rsa.md
+    - crypto/rsa/rsa_privatekey_format.md
+    - crypto/rsa/factor_n_with_d.md
+    - crypto/rsa/fermat_factorization.md
+    - crypto/rsa/pollards_p-1_algorithm.md
+    - crypto/rsa/williams_p+1_algorithm.md
+    - crypto/rsa/wiener_attack.md
+    - crypto/rsa/lsb_oracle_attack.md
+    - crypto/rsa/bleichenbacher_1998.md
+    - crypto/rsa/coppersmith_method.md
+    - crypto/rsa/stereotyped_message.md
+    - crypto/rsa/know_high_bits_of_p.md
+    - crypto/rsa/broadcast_attack_with_linear_padding.md
+    - crypto/rsa/franklin_reiter_related_message_attack.md
+    - crypto/rsa/coppersmith_short_pad_attack.md
+- Pwn:
+  - pwn/c_x86_x64_elf.md
+  - pwn/x64_glibc_heap.md
+  - pwn/c++_x64_elf.md
+  - pwn/x64_kernel.md
+  - pwn/qemu.md
+  - pwn/tools.md
+- Reverse:
+  - rev/z3.md
+- Web:
+  - LAN:
+    - web/lan/arp.md
+  - PHP:
+    - web/php/php_filter.md
+  - Python:
+    - web/python/flask_debug_mode.md
+  - Tools:
+    - web/tools/python_requests.md
+    - web/tools/beautiful_soup.md
+- Misc:
+  - misc/linux_wildcards.md
+- BlockChain:
+  - blockchain/blockchain.md
+  - blockchain/the_ethernaut_writeup.md
+- Tools:
+  - tools/metaspoit.md
+- WiFi:
+  - wifi/reference.md
+- Language:
+  - language/python.md
+  - language/c.md
+  - language/c++.md
+  - language/unity.md
+  - language/js.md
+- Develop:
+  - dev/fastapi.md
+  - dev/python.md
+- Writeup:
+  - writeup/ais3_eof_2024_final_icpc_writeup/index.md
+  - writeup/ais3_eof_2024_qual_writeup/index.md
+  - writeup/scist_linux_challenge_rpg_writeup/index.md
+- Blog:
+  - blog/scist_linux_challenge_rpg_blog.md
+  - blog/college_special_exam.md
+- Environment:
+  - environment/git_setup.md
+  - environment/script.md
+  - environment/pwnbox_setup.md
+  - environment/kernelbox_setup.md
+  - environment/lamp_setup.md
+  - environment/arch_linux_setup.md
+  - environment/github_actions_setup.md
+markdown_extensions:
+- admonition
+- md_in_html
+- codehilite:
+    guess_lang: false
+- def_list
+- footnotes
+- meta
+- toc:
+    permalink: true
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji ''
+    emoji_generator: !!python/name:materialx.emoji.to_svg ''
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+extra_javascript:
+- static/js/extra.js
+- static/js/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+- static/css/extra.css
