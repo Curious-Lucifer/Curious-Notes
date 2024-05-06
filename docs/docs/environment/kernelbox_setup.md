@@ -61,7 +61,7 @@ extend_swap() {
 install_dependencies() {
     echo "[+] Checking / Installing dependencies..."
     sudo apt update
-    sudo apt install -qy make gcc flex bison libncurses-dev libelf-dev libssl-dev cpio build-essential qemu-system-x86
+    sudo apt install -qy bc make gcc flex bison libncurses-dev libelf-dev libssl-dev cpio build-essential qemu-system-x86
 }
 
 
