@@ -85,6 +85,7 @@ set exec-wrapper env LD_PRELOAD=/usr/src/glibc/glibc_dbg/libc.so
 #!/bin/bash
 
 VERSION="22.04";
+WORKDIR="$(dirname "$0")";
 
 if [[ $# == 0 ]]; then
     echo "========= VERSION : $VERSION =========";
@@ -94,18 +95,25 @@ if [[ $# == 0 ]]; then
     echo "Start pwnbox:       ./snippet start";
     echo "Get shell:          ./snippet shell";
     echo "Stop pwnbox daemon: ./snippet stop";
+    echo "Save pwnbox image:  ./snippet save";
     exit 0
 fi
 
 if [[ $1 == "build" ]]; then
-    docker build -t pwnbox:$VERSION .;
+    if [ -e "pwnbox:$VERSION.tar" ]; then
+        docker load --input pwnbox:$VERSION.tar;
+    else
+        docker build -t pwnbox:$VERSION .;
+    fi
 elif [[ $1 == "up" ]]; then
-    docker run -it -d --name pwnbox_$VERSION -v `pwd`/data:/data --cap-add=SYS_PTRACE pwnbox:$VERSION;
+    docker run -it -d --name pwnbox_$VERSION -v $WORKDIR/data:/data --cap-add=SYS_PTRACE pwnbox:$VERSION;
 elif [[ $1 == "start" ]]; then
     docker start pwnbox_$VERSION;
 elif [[ $1 == "shell" ]]; then
-    docker exec -it pwnbox_$VERSION fish;
+    exec docker exec -it pwnbox_$VERSION fish;
 elif [[ $1 == "stop" ]]; then
     docker stop pwnbox_$VERSION;
+elif [[ $1 == "save" ]]; then
+    docker save -o pwnbox:$VERSION.tar pwnbox:$VERSION
 fi
 ```
