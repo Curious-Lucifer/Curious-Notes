@@ -12,7 +12,7 @@ $$
 ---
 ## Coppersmith Short-Pad Attack
 
-if $m_1 = 2^kM + r_1$ and $m_2 = 2^kM + r_2$ ($r_1$ and $r_2$ is padding, $M$ is plaintext), and we know $c_1, c_2$ is $m_1, m_2$’s cipher encrypted by $(n,c)$, consider
+if $m_1 = 2^kM + r_1$ and $m_2 = 2^kM + r_2$ ($r_1$ and $r_2$ is padding, $M$ is plaintext), and we know $c_1, c_2$ is $m_1, m_2$’s cipher encrypted by $(n,e)$, consider
 
 $$
 \begin{aligned}

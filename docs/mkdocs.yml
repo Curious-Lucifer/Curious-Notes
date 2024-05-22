@@ -60,6 +60,10 @@ nav:
 - Pwn:
   - pwn/c_x86_x64_elf.md
   - pwn/x64_glibc_heap.md
+  - x64 Glibc FILE:
+    - pwn/x64_glibc_file/basic_concept.md
+    - pwn/x64_glibc_file/arbitrary_read.md
+    - pwn/x64_glibc_file/arbitrary_write.md
   - pwn/c++_x64_elf.md
   - pwn/x64_kernel.md
   - pwn/qemu.md

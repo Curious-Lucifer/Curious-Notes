@@ -16,7 +16,7 @@ then we can find a set of $t_i$ that $t_i \equiv 1 \pmod {n_i}$ and $t_i \equiv 
 let 
 
 $$
-g(x) = \sum_{i=0}^e (t_i \cdot (f_i(x) ^ e - c_i))
+g(x) = \sum_{i=1}^e (t_i \cdot (f_i(x) ^ e - c_i))
 $$
 
 then $m$ will probably be the small root of $g(x) \pmod {\prod n_i}$
