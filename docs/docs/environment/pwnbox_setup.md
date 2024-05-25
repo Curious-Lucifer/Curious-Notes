@@ -7,6 +7,7 @@
 ├── data
 │   └── 
 ├── script
+│   ├── ctf_update
 │   ├── dbg
 │   └── gdb_script
 └── snippet
@@ -24,7 +25,7 @@ ENV LC_ALL=en_US.UTF-8
 
 RUN apt update && \
     apt upgrade -yq && \
-    apt install -yq gcc gdb git ruby-dev gcc-multilib g++-multilib vim-gtk3 fish make gawk bison libseccomp-dev tmux wget locales binutils nasm python3-pip libssl-dev glibc-source && \
+    apt install -yq gcc gdb git ruby-dev gcc-multilib g++-multilib vim-gtk3 fish make gawk bison libseccomp-dev tmux wget locales binutils nasm python3-pip libssl-dev glibc-source sudo && \
     locale-gen en_US.UTF-8
 
 RUN pip3 install --upgrade pip
@@ -48,19 +49,35 @@ RUN git clone https://github.com/scwuaptx/Pwngdb.git ~/Pwngdb && \
     cat ~/Pwngdb/.gdbinit >> ~/.gdbinit && \
     sed -i "s/source ~\/peda\/peda.py//g" ~/.gdbinit
 
+RUN mkdir ~/code
+RUN git clone https://github.com/Curious-Lucifer/CTFLib.git ~/code/CTFLib && \
+    chmod +x ~/code/CTFLib/setup.sh && \
+    ~/code/CTFLib/setup.sh min
+
 RUN gem install seccomp-tools one_gadget
 RUN echo "set-option -g default-shell /bin/fish" > /root/.tmux.conf
 
 RUN mkdir /data /script
 COPY ./script /script
-RUN chmod +x /script/dbg
+RUN chmod +x /script/dbg /script/ctf_update
 RUN ln -s /script/dbg /usr/bin/dbg
+RUN ln -s /script/ctf_update /usr/bin/ctf_update
 
 WORKDIR /data
 
 ENV PWNBOX=True
 
 CMD ["/bin/fish"]
+```
+
+### ctf_update
+```shell
+#!/bin/bash
+
+pushd ~/code/CTFLib
+git pull origin master
+./setup.sh min
+popd
 ```
 
 ### dbg
