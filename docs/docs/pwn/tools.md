@@ -47,3 +47,4 @@
     - `heapinfo` : print heap bin's information
     - `parseheap` : print heap's information
     - `dump memory <file> <start_addr> <end_addr>` : dump memory (`<start_addr>` ~ `<end_addr>`) to `<file>`
+    - `search -t [byte/word/dword/qword] <value>` : search `<value>` in memeory and output the address
