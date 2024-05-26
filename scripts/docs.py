@@ -30,7 +30,7 @@ def serve():
     os.chdir('site')
     server_address = ('', 8000)
     server = HTTPServer(server_address, SimpleHTTPRequestHandler)
-    typer.echo('Serving at : http://127.0.0.1:8000')
+    typer.echo('Serving at : http://0.0.0.0:8000')
     server.serve_forever()
 
 

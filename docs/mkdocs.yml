@@ -60,14 +60,17 @@ nav:
 - Pwn:
   - pwn/c_x86_x64_elf.md
   - pwn/x64_glibc_heap.md
+  - pwn/c++_x64_elf.md
+  - pwn/tools.md
   - x64 Glibc FILE:
     - pwn/x64_glibc_file/basic_concept.md
     - pwn/x64_glibc_file/arbitrary_read.md
     - pwn/x64_glibc_file/arbitrary_write.md
-  - pwn/c++_x64_elf.md
-  - pwn/x64_kernel.md
+  - x64 Kernel:
+    - pwn/x64_kernel/basic_concept.md
+    - pwn/x64_kernel/simple_exploitation_techniques.md
+    - pwn/x64_kernel/tools.md
   - pwn/qemu.md
-  - pwn/tools.md
 - Reverse:
   - rev/z3.md
 - Web:
@@ -99,6 +102,7 @@ nav:
   - dev/fastapi.md
   - dev/python.md
 - Writeup:
+  - writeup/2023_cggc_qual_yflkp_writeup/index.md
   - writeup/ais3_eof_2024_final_icpc_writeup/index.md
   - writeup/ais3_eof_2024_qual_writeup/index.md
   - writeup/scist_linux_challenge_rpg_writeup/index.md
