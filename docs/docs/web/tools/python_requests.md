@@ -50,6 +50,7 @@ r = req.get('<url>')
 ```
 
 Attribute :
+
 - `url`
 - `status_code`
 - `headers`
