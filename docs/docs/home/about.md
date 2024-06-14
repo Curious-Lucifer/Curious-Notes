@@ -3,6 +3,7 @@
 ## 資訊安全經歷
 ### CTF
 
+- 2024 | Crypto CTF | Undefined | 29th
 - 2024 | AIS3 EOF Final | 不屬於 Kirito 的星爆氣流斬 | 麵包超人獎 Master of Pwn
 - 2024 | AIS3 EOF Final | 不屬於 Kirito 的星爆氣流斬 | 4th
 - 2024 | AIS3 EOF Qual | Curious | 3rd
@@ -36,6 +37,7 @@
 
 ### 雜項
 
+- 2024 | AIS3 Pre-Exam 出題者 - Simple URLEncode Machine & EBH
 - 2024 | 網路攻防演練攻擊手
 - 2024 | Global Cybersecurity Camp 參與者
 - 2023 | AIS3 最佳專題獎 - 軟體安全第一組
@@ -44,6 +46,7 @@
 
 ---
 ## 社群貢獻
+
 - 2023 | SCIST 南臺灣學生資訊社群 第 4 屆資安總召 & 助教
 - 2023 | CISCON 總召組
 - 2023 | LoTuX CTF 創辦人
