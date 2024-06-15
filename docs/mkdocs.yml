@@ -102,6 +102,7 @@ nav:
   - dev/fastapi.md
   - dev/python.md
 - Writeup:
+  - writeup/crypto_ctf_2024_writeup/index.md
   - writeup/2023_cggc_qual_yflkp_writeup/index.md
   - writeup/ais3_eof_2024_final_icpc_writeup/index.md
   - writeup/ais3_eof_2024_qual_writeup/index.md
