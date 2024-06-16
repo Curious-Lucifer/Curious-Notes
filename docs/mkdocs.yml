@@ -83,6 +83,7 @@ nav:
   - Tools:
     - web/tools/python_requests.md
     - web/tools/beautiful_soup.md
+    - web/tools/python_websockets.md
 - Misc:
   - misc/linux_wildcards.md
 - BlockChain:
