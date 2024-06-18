@@ -24,6 +24,9 @@
   - `one_gadget <binary>` : print out `<binary>`'s one gadget and it's condition
 - `seccomp-tools`
   - `seccomp-tools dump <binary>` : print out the seccomp rules of the `<binary>`
+- `patchelf`
+  - `patchelf --set-interpreter <ld.so> <binary>` : set `<binary>`'s interpreter to `<ld.so>`
+  - `patchelf --replace-needed libc.so.6 <libc> <binaray>` : set `<binary>`'s libc to `<libc>` 
 - `gdb`
     - `run` : execute binary
     - `countinue` : continue running binary
